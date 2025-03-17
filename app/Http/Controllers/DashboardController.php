@@ -17,6 +17,6 @@ class DashboardController extends Controller
     //For Testing Purposes
     public function test()
     {
-        return Inertia::render('Test');
+        return view('test');
     }
 }

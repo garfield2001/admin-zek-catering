@@ -2,15 +2,16 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class AdminStaffUser extends Authenticatable
 {
     use Notifiable;
+    use HasUuids;
 
-
-    /**
+    /** 
      * The table associated with the model.
      *
      * @var string
